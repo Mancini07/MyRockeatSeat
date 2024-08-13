@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-color: #000;
+    --bg-input: #06181C;
+    --bg-button: #065E7C;
+    --bd-table: #4A808C;
+    --bg-headTable: #092D38;
+    --bg-tablePrimary: rgba(6,22,27,50%);
+    --bg-tableSecondary: #06181C;
+    --tt-input: #7C7C8A;
+    --tt-button: #fff;
+    --tt-Table: #E1E1E6;
+    --tt-Remove: #F75A68;
+    --tt-Empty: #4E5455;
+
+    --ff-family: "Roboto", sans-serif;
+
+}
+body{
+    font-size: 2rem;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+body *{
+    font-family: "Roboto", sans-serif;
+    color: var(--tt-Table);
+}
+#app{
+    margin: 5rem 0 0 0;
+    padding: 2rem 0 0 0;
+    max-width: 1120px;
+    box-sizing: border-box;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 29.3rem;
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+.search{
+    display: flex;
+    gap: .8rem;
+}
+#input-search{
+    background: var(--bg-input);
+    padding: 1.6rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    width: 43rem;
+}
+
+.search button{
+
+    width: 17rem;
+    background-color: var(--bg-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    font-size: 1.6rem;
+    color: var(--tt-button);
+    border: none;
+    border-radius: .5rem;
+}
+.box{
+    margin: 2rem 0 0 0;
+    width: 112rem;
+    border: 1px solid var(--bd-table);
+    border-radius: .5rem;
+    margin-top: 8.7rem;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th{
+    text-align: left;
+    padding-left: 4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background: var(--bg-headTable);
+    color: var(--tt-Table);
+    font-weight: bold;
+
+    
+}
+
+table th:first-child{
+    border-top-left-radius: .5rem;
+   
+}
+table th:last-child{
+    border-top-right-radius: .5rem;
+   
+}
+.hidden{
+    display: none;
+}
+.empty.hidden{
+    display: none;
+}
+
+tbody tr td{
+    padding: 2.4rem 0 2.4rem 4rem;
+    text-align: left;
+    
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--bg-tablePrimary)
+}
+tbody tr:nth-child(even){
+    background-color: var(--bg-tableSecondary)
+}
+tbody tr:not(:last-child){
+    border-bottom: 1px solid var(--bd-table);
+}
+.user{
+    display: flex;
+    gap: 1.6rem;
+}
+.user a{
+    text-decoration: none;
+}
+.user a p{
+    font-weight: bold;
+}
+.user a span{
+    font-weight: normal;
+}
+.user img{
+    height: 5.6rem;
+    width: 5.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+tbody tr td a{
+    color: var(--tt-Remove);
+    font-weight: bold;
+}
+
+.empty{
+    background: var(--bg-tablePrimary);
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.empty img{
+    width: 13.2rem;
+    height: 12.5rem;
+}
+.empty h1{
+    color: var(--tt-Empty);
+}
