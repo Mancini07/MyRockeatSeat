@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #0f172a;
+    --stroke-color: #1E293B;
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+    --text-color-primary: #f1f5ff;
+    --text-color-secondary: #CBD5E1;
+
+    --text-heading1: 800 24px/135% "Archivo", sans-serif;
+    --text-heading2: 800 16px/140% "Archivo", sans-serif;
+    --text-heading3: 800 14px/140% "Archivo", sans-serif;
+    --text-span: 600 14px/145% "Archivo", sans-serif;
+    --text-paragraph: 400 14px/160% "Archivo", sans-serif;
+}
+
+body{
+    font: var(--text-heading2);
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: var(--brand-color-light);
+}
+
+h1, h2, h3{
+    font: inherit;
+}
+.container{
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    margin-block: 40px;
+}
+
+.content-tag{
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font: 500 10px/1.2 "Archivo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-color-primary);
+    box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
+
+
+}
