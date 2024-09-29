@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    
+}
+.app{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    border: solid 1px red;
+    height: 100vh;
+}
+
+.app>div{
+    border: solid 1px gray;
+}
+
+.app :nth-child(1){
+    grid-area: header;
+}
+.app :nth-child(2){
+    grid-area: main;
+}
+
+.app :nth-child(3){
+    grid-area: aside;
+}
+
+.app :nth-child(4){
+    grid-area: footer;
+}

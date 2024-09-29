@@ -1,0 +1,22 @@
+.container{
+    padding-inline: 163px;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-col{
+    grid-auto-flow: column;
+}
+
+.grid-col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-16{
+    gap: 16px;
+}
+.text-md{
+    font: var(--text-md);
+}
