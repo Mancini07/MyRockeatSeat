@@ -4,18 +4,30 @@ section header{
     border-top: 1px solid var(--stroke-color);
     
 
-    a{
+     a{
         
         justify-self: end;
-        align-items: end;
+        align-items: center;
         gap: 8px;
+        
+
         span {
             
             background-image: url(./../assets/icons/Arrow.svg);
             width: 16px;
             height: 16px;
-            background-repeat: no-repeat;
+
+            
+            
         }
+        &:hover span{
+            background-image: url(./../assets/icons/ArrowRight.svg);
+            width: 16px;
+            height: 16px;
+
+        }
+
+        
     }
 
 }
@@ -25,6 +37,7 @@ section header{
         object-fit: cover;
         border-radius: 4px;
     }
+    margin-bottom: 80px;
 }
 
 .card{
@@ -56,6 +69,85 @@ section header{
 }
 
 #weekly{
+    margin-bottom: 80px;
+        &>div{
+            grid-template-columns: repeat(4, 292px);
+
+            img{
+                height: 160px;
+            }
+
+            figure{
+                position: relative;
+    
+                .content-tag{
+                    position: absolute;
+                    top: 8px;
+                    left: 8px;
+                }
+
+                p{
+                    margin-top: 8px;
+                    margin-bottom: 24px;
+                }
+
+            }
+
+        }
 
 
+
+}
+
+#destaquesAI{
+    figure{
+        gap: 16px;
+        &>div{
+            padding-block: 6px
+
+           
+
+        }
+
+        span{
+            margin-bottom: 8px;
+        }
+        
+        h2{
+            margin-bottom: 4px;
+        }
+        
+    }
+    img{
+        height: 176px;
+        width: 176px;
+    }
+    p{
+        font: var(--text-paragraph);
+    }
+}
+
+#aside{
+    #ads{
+
+        img{
+            border-radius: 4px;
+        }
+        margin-bottom: 32px;
+    }
+
+    &>div+div{
+        span{
+            margin-bottom: 8px;
+        }
+        h3{
+            font: 400 14px "Archivo Black", sans-serif;
+
+        }
+        
+        img{
+            width: 72px;
+            height: 72px;
+        }
+    }
 }

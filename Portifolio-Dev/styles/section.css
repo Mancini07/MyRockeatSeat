@@ -1,0 +1,110 @@
+section header{
+    text-align: center;
+
+    h1{     
+        font: var(--title-lg);
+        color: var(--gray-600) ;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font: var(--subtitle);
+        color: var(--gray-500) ;
+        margin-bottom: 8px;
+       }
+
+
+
+    strong{
+        color: var(--blue);
+        font-weight: 400;
+    }
+
+    p{
+        font: var(--text-sm);
+        color: var(--gray-400) ;
+    }
+}
+
+#intro{
+    background-image: url(./../assets/Background_Intro.png);
+    background-size: cover;
+    height: 100vh;
+    padding-block: 120px 94px;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    #info{
+
+        margin-bottom: 94px;
+
+        #avatar{
+            position: relative;
+            width: 112px;
+            height: 112px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 56px;
+    
+            
+            #user{
+                padding: 4.36px;
+                margin: 8px;
+                position: absolute;
+                align-self: center;
+                justify-self: center;
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                border: 2px solid var(--blue) ;
+            }
+            #code{
+                position: absolute;
+                justify-self: end;
+                align-self: self-end;
+                margin-bottom: 5.5px;
+                margin-right: 2.5px;
+            }
+    
+     
+    
+        }
+        
+        #text{
+           
+           margin-bottom: 80px;
+           margin-left: 180px;
+           margin-right: 180px;
+
+        }
+
+        #tags{
+            margin-left: auto;
+            margin-right: auto;
+            width: 754px;
+            #tag{
+                
+                height: 40px ;
+                background-color: var(--gray-300) ;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                border-radius: 999px;
+                color: var(--gray-500);
+
+            }
+        }
+
+
+        
+    }
+    #caretDouble{
+        justify-content: center;
+        margin-bottom: 57px;
+
+    }
+    
+
+
+
+}
