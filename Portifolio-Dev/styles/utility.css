@@ -12,11 +12,33 @@
 
 .grid-col-3{
     grid-template-columns: repeat(3, 1fr);
+    
 }
-
+.gap-8{
+    gap: 8px;
+}
+.gap-12{
+    gap: 12px;
+}
 .gap-16{
     gap: 16px;
 }
+
+.gap-24{
+    gap: 24px;
+}
+.title-md{
+    font: var(--title-md);
+}
+.title-sm{
+    font: var(--title-sm);
+}
 .text-md{
     font: var(--text-md);
+}
+.text-sm{
+    font: var(--text-sm);
+}
+.subtitle{
+    font: var(--subtitle);
 }
