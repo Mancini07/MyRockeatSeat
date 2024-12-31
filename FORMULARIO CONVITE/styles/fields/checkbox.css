@@ -1,0 +1,42 @@
+.conditions{
+    border-top: 1px solid var(--input-stroke);
+    padding-top: 2.5rem;
+
+    & .checkbox-wrapper{
+        margin-bottom: .25rem;
+        font: var(--body-sm);
+        color: var(--text-body);
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+        position: relative;
+
+        & input[type="checkbox"]{
+            
+            position: absolute;
+            left: auto;
+            right: auto;
+            inset: 0;
+            cursor: pointer;
+            width: 3.9%;
+            height: 100%;
+            opacity: 0;
+
+
+            
+            
+        }
+        & span + span{
+            display: none;
+        }
+
+        &:has(:checked){
+            span{
+                display: none;
+            }
+            span + span{
+                display: block;
+            }
+        }
+    }
+}

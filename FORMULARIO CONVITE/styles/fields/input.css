@@ -1,0 +1,103 @@
+input[type="text"], textarea{
+        
+    background-color: var(--input-base) ;
+    padding: .81rem 1rem;
+    border: solid 1px var(--input-stroke);
+    border-radius: .5rem;
+    color: var(--text-heading);
+    appearance: none;
+    resize: none;
+ 
+}
+
+input[type="file"]{
+    position: absolute;
+    color: var(--input-placeholder);
+    font: var(--body-md);
+    width: 300%;
+    inset: 0;
+    
+    
+    &::-webkit-file-upload-button{
+        margin-right: .75rem;
+        cursor: pointer;
+        height: 3rem;
+        width: 33.5%;
+        opacity: 0;
+        appearance: none;
+    }
+
+    &:not(:focus):empty{
+        
+    }
+}
+.error{
+    display: none;
+    gap: .5rem;
+    
+}
+:not(:focus):invalid + .error{
+    top: 2.8rem;
+    position: absolute;
+    display: flex;
+   color: var(--danger);
+   font: var(--body-xs);
+}
+.button{
+    position: relative;
+    gap: .5rem;
+    & label{
+
+        background-color: var(--shape-button);
+        font: var(--body-sm);
+        color: var(--text-heading);
+        padding: .656rem;
+        border-radius: .5rem;
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+
+}
+.input-wrapper{
+    display: grid;
+    gap: .75rem ;
+    align-items: center;
+}
+
+.textarea-wrapper{
+    display: grid;
+    gap: .75rem;
+}
+
+
+
+input:focus, textarea:focus{
+    border-color: var(--brand-light);
+    outline: var(--brand-light);
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--input-placeholder);
+}
+
+.contact{
+    .information-contact{
+        margin-top: 1rem;
+    }
+    :not(:focus):invalid + .error{
+        top: 5.3rem;
+        position: absolute;
+        display: flex;
+       color: var(--danger);
+       font: var(--body-xs);
+    }
+
+    :not(:focus):invalid{
+        border-color: var(--danger);
+    }
+
+
+}
+
+
