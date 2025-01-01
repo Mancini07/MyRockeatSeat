@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Formulario de Convite</title>
+</head>
+<body>
+    <div class="app">
+        <aside>
+            <div class="aside-container">
+                <img src="./assets/Background.jpg" alt="">
+                
+                <header>
+                    <img src="./assets/Logo.svg" alt="Logo">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </header>
+               
+
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-container">
+                <h2>Crie seu convite</h2>
+
+                <form action="" enctype="multipart/form-data" method="post">
+                    <fieldset class="about-event">
+                        
+                        <legend><img src="./assets/icons/calendar.svg" alt="Icone de calendário"> Sobre o evento</legend>
+
+                        <div class="input-wrapper">
+                            <label for="title" >Título</label>
+                            <input type="text" id="title" name="title" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="init">Início</label>
+                                <input type="text" id="init" name="init" placeholder="DD/MM/AAAA,--:--">
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="end">Fim</label>
+                                <input type="text" id="end" name="end" placeholder="DD/MM/AAAA,--:--">
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+
+                                <label for="type">Tipo</label>
+
+                                <div class="wrapper ">
+
+                                    <div class="radio-wrapper flex">
+                                        <input type="radio" name="type-event" value="presencial" id="presencial">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 3.66675C10.2246 3.66675 9.80067 3.84234 9.48811 4.1549C9.17555 4.46746 8.99996 4.89139 8.99996 5.33341V28.3334H23V5.33341C23 4.89139 22.8244 4.46746 22.5118 4.1549C22.1992 3.84234 21.7753 3.66675 21.3333 3.66675H10.6666ZM25 11.0001V5.33341C25 4.36095 24.6136 3.42832 23.926 2.74069C23.2384 2.05306 22.3058 1.66675 21.3333 1.66675H10.6666C9.69417 1.66675 8.76153 2.05306 8.0739 2.74069C7.38627 3.42832 6.99996 4.36095 6.99996 5.33341V15.0001H5.33329C4.36083 15.0001 3.4282 15.3864 2.74057 16.074C2.05293 16.7617 1.66663 17.6943 1.66663 18.6667V26.6667C1.66663 27.6392 2.05293 28.5718 2.74057 29.2595C3.4282 29.9471 4.36083 30.3334 5.33329 30.3334H26.6666C27.6391 30.3334 28.5717 29.9471 29.2593 29.2595C29.947 28.5718 30.3333 27.6392 30.3333 26.6667V14.6667C30.3333 13.6943 29.947 12.7617 29.2593 12.074C28.5717 11.3864 27.6391 11.0001 26.6666 11.0001H25ZM25 13.0001V28.3334H26.6666C27.1087 28.3334 27.5326 28.1578 27.8451 27.8453C28.1577 27.5327 28.3333 27.1088 28.3333 26.6667V14.6667C28.3333 14.2247 28.1577 13.8008 27.8451 13.4882C27.5326 13.1757 27.1087 13.0001 26.6666 13.0001H25ZM6.99996 17.0001H5.33329C4.89127 17.0001 4.46734 17.1757 4.15478 17.4882C3.84222 17.8008 3.66663 18.2247 3.66663 18.6667V26.6667C3.66663 27.1088 3.84222 27.5327 4.15478 27.8453C4.46734 28.1578 4.89127 28.3334 5.33329 28.3334H6.99996V17.0001ZM12.3333 8.00008C12.3333 7.4478 12.781 7.00008 13.3333 7.00008H18.6666C19.2189 7.00008 19.6666 7.4478 19.6666 8.00008C19.6666 8.55237 19.2189 9.00008 18.6666 9.00008H13.3333C12.781 9.00008 12.3333 8.55237 12.3333 8.00008ZM12.3333 13.3334C12.3333 12.7811 12.781 12.3334 13.3333 12.3334H18.6666C19.2189 12.3334 19.6666 12.7811 19.6666 13.3334C19.6666 13.8857 19.2189 14.3334 18.6666 14.3334H13.3333C12.781 14.3334 12.3333 13.8857 12.3333 13.3334ZM12.3333 18.6667C12.3333 18.1145 12.781 17.6667 13.3333 17.6667H18.6666C19.2189 17.6667 19.6666 18.1145 19.6666 18.6667C19.6666 19.219 19.2189 19.6667 18.6666 19.6667H13.3333C12.781 19.6667 12.3333 19.219 12.3333 18.6667ZM12.3333 24.0001C12.3333 23.4478 12.781 23.0001 13.3333 23.0001H18.6666C19.2189 23.0001 19.6666 23.4478 19.6666 24.0001C19.6666 24.5524 19.2189 25.0001 18.6666 25.0001H13.3333C12.781 25.0001 12.3333 24.5524 12.3333 24.0001Z" fill="#869198"/>
+                                        </svg>
+                                        <label for="presencial">Presencial</label>
+                                            
+                                    </div>
+    
+                                    <div class="radio-wrapper flex flex-1">
+                                        <input type="radio" name="type-event" value="presencial" id="presencial">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33329 9C4.41282 9 3.66663 9.74619 3.66663 10.6667V21.3333C3.66663 22.2538 4.41282 23 5.33329 23H18.6666C19.5871 23 20.3333 22.2538 20.3333 21.3333V17.347C20.3332 17.3373 20.3332 17.3276 20.3333 17.3178V14.019C20.3331 14.0069 20.3331 13.9949 20.3333 13.9829V10.6667C20.3333 9.74619 19.5871 9 18.6666 9H5.33329ZM22.3333 12.2588V10.6667C22.3333 8.64162 20.6917 7 18.6666 7H5.33329C3.30825 7 1.66663 8.64162 1.66663 10.6667V21.3333C1.66663 23.3584 3.30825 25 5.33329 25H18.6666C20.6917 25 22.3333 23.3584 22.3333 21.3333V19.2019L27.7433 22.8085C27.9943 22.9755 28.2859 23.0713 28.587 23.0858C28.8881 23.1002 29.1875 23.0326 29.4533 22.8903C29.7191 22.748 29.9413 22.5363 30.0962 22.2777C30.2512 22.0191 30.3331 21.7233 30.3333 21.4219V10.4936C30.3333 10.4935 30.3333 10.4937 30.3333 10.4936C30.3333 10.2005 30.256 9.9122 30.1092 9.65845C29.9624 9.40462 29.7511 9.19404 29.4968 9.04796C29.2425 8.90188 28.9542 8.82548 28.661 8.82648C28.3677 8.82747 28.0799 8.90583 27.8266 9.05363L22.3333 12.2588ZM22.3333 14.5743V16.7982L28.3333 20.7982V11.0735L22.3333 14.5743Z" fill="#869198"/>
+                                        </svg>
+                                            
+                                        <label for="presencial">Online</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="end">Local</label>
+                                <input type="text" id="end" name="end" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="">Descrição</label>
+                            <textarea name="description" id="description" rows="5" cols="30" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="personalization">
+                        <legend><img src="./assets/icons/paintbrush-vertical.svg" alt="paint brush">Personalização</legend>
+
+                        <div class="input-wrapper">
+                            <label for="pickcollor">Cor principal</label>
+                            <div class="grid grid-11">
+                                <div class="pickcollor-wrapper bg-brandLight">
+                                    <input type="radio" name="color" value="#59B2FF">
+                                </div>
+
+                                <div class="pickcollor-wrapper bg-navy">
+                                    <input  type="radio" name="color" value="#6A59FF">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-purple">
+                                    <input  type="radio" name="color" value="#B259FF">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-fuschia">
+                                    <input  type="radio" name="color" value="#FF59F9">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-pink">
+                                    <input  type="radio" name="color" value="#FF598B">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-danger">
+                                    <input  type="radio" name="color" value="#FF5959">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-orange">
+                                    <input  type="radio" name="color" value="#FF8B59">
+                                </div>
+                               
+                                <div class="pickcollor-wrapper bg-yellow">
+                                    <input  type="radio" name="color" value="#FFCD59">
+                                </div>
+                               
+                                <div class="pickcollor-wrapper bg-lime">
+                                    <input  type="radio" name="color" value="#E1FF59">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-green">
+                                    <input  type="radio" name="color" value="#59FF91">
+                                </div>
+                                
+                                <div class="pickcollor-wrapper bg-cyan">
+                                    <input  type="radio" name="color" value="#59FFF9">
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="button-wrapper">
+
+                            <label for="">Tema do evento</label>
+
+                            <div class="event-wrapper grid grid-4">
+                                <div class="event">
+                                    <input type="radio" value="birthday" name="event" id="birthday">
+                                    <img src="./assets/images/birthday.svg" alt="Birthday">
+                                    <label for="birthday">Aniverssário</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="kids" name="event" id="kids">
+                                    <img src="./assets/images/kids.svg" alt="kids">
+                                    <label for="birthday">Infantil</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="graduation" name="event" id="graduation">
+                                    <img src="./assets/images/graduation.svg" alt="graduation">
+                                    <label for="graduation">Formatura</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="wedding" name="event" id="wedding">
+                                    <img src="./assets/images/wedding.svg" alt="wedding">
+                                    <label for="wedding">Casamento</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="baby-shower" name="event" id="baby-shower">
+                                    <img src="./assets/images/baby-shower.svg" alt="baby-shower">
+                                    <label for="baby-shower">Chá de bebê</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="bridal-shower" name="event" id="bridal-shower">
+                                    <img src="./assets/images/bridal-shower.svg" alt="bridal-shower">
+                                    <label for="bridal-shower">Chá de panela</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="carnival" name="event" id="carnival">
+                                    <img src="./assets/images/carnival.svg" alt="carnival">
+                                    <label for="carnival">Carnaval</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="easter" name="event" id="easter">
+                                    <img src="./assets/images/easter.svg" alt="easter">
+                                    <label for="easter">Páscoa</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="saint-john" name="event" id="saint-john">
+                                    <img src="./assets/images/saint-john.svg" alt="saint-john">
+                                    <label for="saint-john">São João</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="hallowen" name="event" id="hallowen">
+                                    <img src="./assets/images/hallowen.svg" alt="hallowen">
+                                    <label for="hallowen">Halloween</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="christmas" name="event" id="christmas">
+                                    <img src="./assets/images/christmas.svg" alt="christmas">
+                                    <label for="christmas">Natal</label>
+                                </div>
+
+                                <div class="event">
+                                    <input type="radio" value="another" name="event" id="another">
+                                    <img src="./assets/images/another.svg" alt="another">
+                                    <label for="another">Outro</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+
+                            <div class="style grid flex-1">
+                                <label for="">Estilo</label>
+                                <div class="switch-wrapper ">
+                                    <div class="switch"></div>
+                                    <input type="checkbox">
+                                    <label for="" class="">Escuro</label>
+                                    <label for="">Claro</label>
+                                </div>
+                            </div>
+
+                            <div class="style grid flex-3">
+                                <label for="">Foto de capa</label>
+                                <div class="input-wrapper flex flex-3">
+                                    <div class="button grid" >
+
+                                        <label for="selection-file">                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.14645 1.64645C8.34171 1.45118 8.65829 1.45118 8.85355 1.64645L12.1869 4.97978C12.3821 5.17504 12.3821 5.49162 12.1869 5.68689C11.9916 5.88215 11.675 5.88215 11.4798 5.68689L9 3.20711V10C9 10.2761 8.77614 10.5 8.5 10.5C8.22386 10.5 8 10.2761 8 10V3.20711L5.52022 5.68689C5.32496 5.88215 5.00838 5.88215 4.81311 5.68689C4.61785 5.49162 4.61785 5.17504 4.81311 4.97978L8.14645 1.64645ZM2.5 9.5C2.77614 9.5 3 9.72386 3 10V12.6667C3 12.8877 3.0878 13.0996 3.24408 13.2559C3.40036 13.4122 3.61232 13.5 3.83333 13.5H13.1667C13.3877 13.5 13.5996 13.4122 13.7559 13.2559C13.9122 13.0996 14 12.8877 14 12.6667V10C14 9.72386 14.2239 9.5 14.5 9.5C14.7761 9.5 15 9.72386 15 10V12.6667C15 13.1529 14.8068 13.6192 14.463 13.963C14.1192 14.3068 13.6529 14.5 13.1667 14.5H3.83333C3.3471 14.5 2.88079 14.3068 2.53697 13.963C2.19315 13.6192 2 13.1529 2 12.6667V10C2 9.72386 2.22386 9.5 2.5 9.5Z" fill="#59B2FF"/>
+                                            </svg>Selecionar</label>
+                                        <input type="file" name="selection-file" accept=".jpg, .jpeg, .png, .gif" required>
+                                        <div class="error">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2140_175)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 1.83325C4.59428 1.83325 1.83337 4.59416 1.83337 7.99992C1.83337 11.4057 4.59428 14.1666 8.00004 14.1666C11.4058 14.1666 14.1667 11.4057 14.1667 7.99992C14.1667 4.59416 11.4058 1.83325 8.00004 1.83325ZM0.833374 7.99992C0.833374 4.04188 4.042 0.833252 8.00004 0.833252C11.9581 0.833252 15.1667 4.04188 15.1667 7.99992C15.1667 11.958 11.9581 15.1666 8.00004 15.1666C4.042 15.1666 0.833374 11.958 0.833374 7.99992ZM8.00004 4.83325C8.27618 4.83325 8.50004 5.05711 8.50004 5.33325V7.99992C8.50004 8.27606 8.27618 8.49992 8.00004 8.49992C7.7239 8.49992 7.50004 8.27606 7.50004 7.99992V5.33325C7.50004 5.05711 7.7239 4.83325 8.00004 4.83325ZM7.50004 10.6666C7.50004 10.3904 7.7239 10.1666 8.00004 10.1666H8.00671C8.28285 10.1666 8.50671 10.3904 8.50671 10.6666C8.50671 10.9427 8.28285 11.1666 8.00671 11.1666H8.00004C7.7239 11.1666 7.50004 10.9427 7.50004 10.6666Z" fill="#FF5959"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_2140_175">
+                                                <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <p>Error message</p>      
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+ 
+                        </div>
+                       
+                    </fieldset>
+
+                    <fieldset class="contact">
+                        <legend><svg width="24" height="24" viewBox="0 0 24 24" fill="#869198" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.25C8.41421 1.25 8.75 1.58579 8.75 2V3.25H15.25V2C15.25 1.58579 15.5858 1.25 16 1.25C16.4142 1.25 16.75 1.58579 16.75 2V3.25H19C20.5188 3.25 21.75 4.48122 21.75 6V20C21.75 21.5188 20.5188 22.75 19 22.75H5C3.48122 22.75 2.25 21.5188 2.25 20V6C2.25 4.48122 3.48122 3.25 5 3.25H7.25V2C7.25 1.58579 7.58579 1.25 8 1.25ZM5 4.75C4.30964 4.75 3.75 5.30964 3.75 6V20C3.75 20.6904 4.30964 21.25 5 21.25H19C19.6904 21.25 20.25 20.6904 20.25 20V6C20.25 5.30964 19.6904 4.75 19 4.75H5ZM12 8.75C11.3096 8.75 10.75 9.30964 10.75 10C10.75 10.6904 11.3096 11.25 12 11.25C12.6904 11.25 13.25 10.6904 13.25 10C13.25 9.30964 12.6904 8.75 12 8.75ZM9.25 10C9.25 8.48122 10.4812 7.25 12 7.25C13.5188 7.25 14.75 8.48122 14.75 10C14.75 11.5188 13.5188 12.75 12 12.75C10.4812 12.75 9.25 11.5188 9.25 10ZM7.05546 16.0555C7.57118 15.5397 8.27065 15.25 9 15.25H15C15.7293 15.25 16.4288 15.5397 16.9445 16.0555C17.4603 16.5712 17.75 17.2707 17.75 18C17.75 18.4142 17.4142 18.75 17 18.75C16.5858 18.75 16.25 18.4142 16.25 18C16.25 17.6685 16.1183 17.3505 15.8839 17.1161C15.6495 16.8817 15.3315 16.75 15 16.75H9C8.66848 16.75 8.35054 16.8817 8.11612 17.1161C7.8817 17.3505 7.75 17.6685 7.75 18C7.75 18.4142 7.41421 18.75 7 18.75C6.58579 18.75 6.25 18.4142 6.25 18C6.25 17.2707 6.53973 16.5712 7.05546 16.0555Z" fill="#869198"/>
+                            </svg>
+                             Dados para contato</legend>
+
+                             <div class="input-wrapper">
+                                <label for="full-name">Nome</label>
+                                <input type="text" name="full-name" id="name" placeholder="Nome Completo" required>
+
+                                <div class="error">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2140_175)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 1.83325C4.59428 1.83325 1.83337 4.59416 1.83337 7.99992C1.83337 11.4057 4.59428 14.1666 8.00004 14.1666C11.4058 14.1666 14.1667 11.4057 14.1667 7.99992C14.1667 4.59416 11.4058 1.83325 8.00004 1.83325ZM0.833374 7.99992C0.833374 4.04188 4.042 0.833252 8.00004 0.833252C11.9581 0.833252 15.1667 4.04188 15.1667 7.99992C15.1667 11.958 11.9581 15.1666 8.00004 15.1666C4.042 15.1666 0.833374 11.958 0.833374 7.99992ZM8.00004 4.83325C8.27618 4.83325 8.50004 5.05711 8.50004 5.33325V7.99992C8.50004 8.27606 8.27618 8.49992 8.00004 8.49992C7.7239 8.49992 7.50004 8.27606 7.50004 7.99992V5.33325C7.50004 5.05711 7.7239 4.83325 8.00004 4.83325ZM7.50004 10.6666C7.50004 10.3904 7.7239 10.1666 8.00004 10.1666H8.00671C8.28285 10.1666 8.50671 10.3904 8.50671 10.6666C8.50671 10.9427 8.28285 11.1666 8.00671 11.1666H8.00004C7.7239 11.1666 7.50004 10.9427 7.50004 10.6666Z" fill="#FF5959"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_2140_175">
+                                        <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p>Campo obrigatório</p>      
+                                </div>
+                            </div>
+
+                            <div class="information-contact flex">
+                                <div class="input-wrapper flex-1">
+                                    <label for="adress-email">E-mail</label>
+                                    <input type="text" id="adress-email" name="adress-email" placeholder="exemplo@email.com">
+                                </div>
+    
+                                <div class="input-wrapper flex-1">
+                                    <label for="phone-number">Telefone</label>
+                                    <input type="text" id="phone-number" name="phone-number" placeholder="(99) 99999-9999 ">
+                                </div>
+                            </div>
+                    </fieldset>
+
+                    <fieldset class="conditions">
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="acepted-conditions" id="acepted-conditions">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="#1C1F21"/>
+                                <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" stroke="#363B40"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="#1C1F21"/>
+                                    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" stroke="#59B2FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.687 5.64645C15.8822 5.84171 15.8822 6.15829 15.687 6.35355L8.35363 13.6869C8.15837 13.8821 7.84179 13.8821 7.64653 13.6869L4.31319 10.3536C4.11793 10.1583 4.11793 9.84171 4.31319 9.64645C4.50846 9.45118 4.82504 9.45118 5.0203 9.64645L8.00008 12.6262L14.9799 5.64645C15.1751 5.45118 15.4917 5.45118 15.687 5.64645Z" fill="#59B2FF"/>
+                                </svg>
+                            </span>
+                            <label for="acepted-conditions">Li e concordo com os <strong>Termos e Condições</strong>  e com a <strong>Política de Privacidade</strong></label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="acepted-atualizations-email" id="acepted-atualizations-email">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="#1C1F21"/>
+                                <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" stroke="#363B40"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="#1C1F21"/>
+                                    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" stroke="#59B2FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.687 5.64645C15.8822 5.84171 15.8822 6.15829 15.687 6.35355L8.35363 13.6869C8.15837 13.8821 7.84179 13.8821 7.64653 13.6869L4.31319 10.3536C4.11793 10.1583 4.11793 9.84171 4.31319 9.64645C4.50846 9.45118 4.82504 9.45118 5.0203 9.64645L8.00008 12.6262L14.9799 5.64645C15.1751 5.45118 15.4917 5.45118 15.687 5.64645Z" fill="#59B2FF"/>
+                                </svg>
+                            </span>
+                            <label for="acepted-atualizations-email">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="acepted-atualizations-sms" id="acepted-atualizations-sms">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="#1C1F21"/>
+                                <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" stroke="#363B40"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="#1C1F21"/>
+                                    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" stroke="#59B2FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.687 5.64645C15.8822 5.84171 15.8822 6.15829 15.687 6.35355L8.35363 13.6869C8.15837 13.8821 7.84179 13.8821 7.64653 13.6869L4.31319 10.3536C4.11793 10.1583 4.11793 9.84171 4.31319 9.64645C4.50846 9.45118 4.82504 9.45118 5.0203 9.64645L8.00008 12.6262L14.9799 5.64645C15.1751 5.45118 15.4917 5.45118 15.687 5.64645Z" fill="#59B2FF"/>
+                                </svg>
+                            </span>
+                            <label for="acepted-atualizations-sms">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="button-submit">
+                        <button type="submit">
+                            <label for="">                            
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71284 4.21284C2.14261 3.78307 2.7255 3.54163 3.33329 3.54163H16.6666C17.2744 3.54163 17.8573 3.78307 18.2871 4.21284C18.7168 4.64261 18.9583 5.2255 18.9583 5.83329V7.49996C18.9583 7.84514 18.6785 8.12496 18.3333 8.12496C17.836 8.12496 17.3591 8.3225 17.0075 8.67413C16.6558 9.02576 16.4583 9.50268 16.4583 9.99996C16.4583 10.4972 16.6558 10.9742 17.0075 11.3258C17.3591 11.6774 17.836 11.875 18.3333 11.875C18.6785 11.875 18.9583 12.1548 18.9583 12.5V14.1666C18.9583 14.7744 18.7168 15.3573 18.2871 15.7871C17.8573 16.2168 17.2744 16.4583 16.6666 16.4583H3.33329C2.7255 16.4583 2.14261 16.2168 1.71284 15.7871C1.28307 15.3573 1.04163 14.7744 1.04163 14.1666V12.5C1.04163 12.1548 1.32145 11.875 1.66663 11.875C2.16391 11.875 2.64082 11.6774 2.99245 11.3258C3.34408 10.9742 3.54163 10.4972 3.54163 9.99996C3.54163 9.50268 3.34408 9.02576 2.99245 8.67413C2.64082 8.3225 2.16391 8.12496 1.66663 8.12496C1.32145 8.12496 1.04163 7.84514 1.04163 7.49996V5.83329C1.04163 5.2255 1.28307 4.64261 1.71284 4.21284ZM11.4583 15.2083V14.1666C11.4583 13.8214 11.1785 13.5416 10.8333 13.5416C10.4881 13.5416 10.2083 13.8214 10.2083 14.1666V15.2083H3.33329C3.05703 15.2083 2.79207 15.0985 2.59672 14.9032C2.40137 14.7078 2.29163 14.4429 2.29163 14.1666V13.0618C2.88753 12.9402 3.43985 12.6462 3.87633 12.2097C4.46239 11.6236 4.79163 10.8288 4.79163 9.99996C4.79163 9.17116 4.46239 8.3763 3.87633 7.79025C3.43985 7.35376 2.88753 7.05973 2.29163 6.93808V5.83329C2.29163 5.55703 2.40137 5.29207 2.59672 5.09672C2.79207 4.90137 3.05703 4.79163 3.33329 4.79163H10.2083V5.83329C10.2083 6.17847 10.4881 6.45829 10.8333 6.45829C11.1785 6.45829 11.4583 6.17847 11.4583 5.83329V4.79163H16.6666C16.9429 4.79163 17.2078 4.90137 17.4032 5.09672C17.5985 5.29207 17.7083 5.55703 17.7083 5.83329V6.93808C17.1124 7.05973 16.5601 7.35376 16.1236 7.79025C15.5375 8.3763 15.2083 9.17116 15.2083 9.99996C15.2083 10.8288 15.5375 11.6236 16.1236 12.2097C16.5601 12.6462 17.1124 12.9402 17.7083 13.0618V14.1666C17.7083 14.4429 17.5985 14.7078 17.4032 14.9032C17.2078 15.0985 16.9429 15.2083 16.6666 15.2083H11.4583ZM10.8333 8.54163C11.1785 8.54163 11.4583 8.82145 11.4583 9.16663V10.8333C11.4583 11.1785 11.1785 11.4583 10.8333 11.4583C10.4881 11.4583 10.2083 11.1785 10.2083 10.8333V9.16663C10.2083 8.82145 10.4881 8.54163 10.8333 8.54163Z" fill="white"/>
+                            </svg>Gerar convite</label>       
+                        </button>
+                    </fieldset>
+
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

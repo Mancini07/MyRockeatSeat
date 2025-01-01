@@ -1,0 +1,68 @@
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid{
+ display: grid;
+}
+
+.grid-11{
+    grid-template-columns: repeat(11,1fr);
+}
+.grid-4{
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1rem)) ;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-1{
+    flex: 1;
+}
+
+.flex-3{
+    flex: 3;
+}
+.bg-brandLight{
+    background-color: var(--brand-light);
+}
+
+.bg-navy{
+    background-color: var(--navy);
+}
+
+.bg-purple{
+    background-color: var(--purple);
+}
+
+.bg-fuschia{
+    background-color: var(--fuschia);
+}
+
+.bg-pink{
+    background-color: var(--pink);
+}
+
+.bg-danger{
+    background-color: var(--danger);
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.bg-yellow{
+    background-color: var(--yellow);
+}
+
+.bg-lime{
+    background-color: var(--lime);
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+
+.bg-cyan{
+    background-color: var(--cyan);
+}
